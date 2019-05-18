@@ -1,0 +1,276 @@
+Analysis & Elaboration report for MComputer
+Sun Jul 15 21:12:02 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                   ;
++------------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Sun Jul 15 21:12:02 2018       ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                      ; MComputer                                   ;
+; Top-level Entity Name              ; MC_TEMP                                     ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                            ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE6E22C8        ;                    ;
+; Top-level entity name                                            ; MC_TEMP            ; MComputer          ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Sun Jul 15 21:11:42 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MComputer -c MComputer --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file mc_temp.bdf
+    Info (12023): Found entity 1: MC_TEMP
+Info (12021): Found 2 design units, including 1 entities, in source file clk_source.vhd
+    Info (12022): Found design unit 1: CLK_SOURCE-A File: D:/quartus/MyProject/MComputer/CLK_SOURCE.vhd Line: 15
+    Info (12023): Found entity 1: CLK_SOURCE File: D:/quartus/MyProject/MComputer/CLK_SOURCE.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
+    Info (12022): Found design unit 1: RAM-A File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 18
+    Info (12023): Found entity 1: RAM File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
+    Info (12022): Found design unit 1: PC-A File: D:/quartus/MyProject/MComputer/PC.vhd Line: 16
+    Info (12023): Found entity 1: PC File: D:/quartus/MyProject/MComputer/PC.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file mar.vhd
+    Info (12022): Found design unit 1: MAR-A File: D:/quartus/MyProject/MComputer/MAR.vhd Line: 16
+    Info (12023): Found entity 1: MAR File: D:/quartus/MyProject/MComputer/MAR.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file ir.vhd
+    Info (12022): Found design unit 1: IR-A File: D:/quartus/MyProject/MComputer/IR.vhd Line: 16
+    Info (12023): Found entity 1: IR File: D:/quartus/MyProject/MComputer/IR.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file dr.vhd
+    Info (12022): Found design unit 1: DR-A File: D:/quartus/MyProject/MComputer/DR.vhd Line: 17
+    Info (12023): Found entity 1: DR File: D:/quartus/MyProject/MComputer/DR.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file ctrl.vhd
+    Info (12022): Found design unit 1: CTRL-A File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 18
+    Info (12023): Found entity 1: CTRL File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file counter.vhd
+    Info (12022): Found design unit 1: COUNTER-A File: D:/quartus/MyProject/MComputer/COUNTER.vhd Line: 16
+    Info (12023): Found entity 1: COUNTER File: D:/quartus/MyProject/MComputer/COUNTER.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: ALU-A File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 18
+    Info (12023): Found entity 1: ALU File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file acc.vhd
+    Info (12022): Found design unit 1: ACC-A File: D:/quartus/MyProject/MComputer/ACC.vhd Line: 16
+    Info (12023): Found entity 1: ACC File: D:/quartus/MyProject/MComputer/ACC.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file ram_mux.vhd
+    Info (12022): Found design unit 1: RAM_MUX-A File: D:/quartus/MyProject/MComputer/RAM_MUX.vhd Line: 19
+    Info (12023): Found entity 1: RAM_MUX File: D:/quartus/MyProject/MComputer/RAM_MUX.vhd Line: 9
+Info (12127): Elaborating entity "MC_TEMP" for the top level hierarchy
+Info (12128): Elaborating entity "CLK_SOURCE" for hierarchy "CLK_SOURCE:inst1"
+Info (12128): Elaborating entity "COUNTER" for hierarchy "COUNTER:inst12"
+Info (12128): Elaborating entity "CTRL" for hierarchy "CTRL:inst6"
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(26): signal "T0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(26): signal "T3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(27): signal "T2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(28): signal "T6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(29): signal "T1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(29): signal "T4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(30): signal "T2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(30): signal "T5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(31): signal "T5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(32): signal "T6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(33): signal "T7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(34): signal "T6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at CTRL.vhd(34): signal "T7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at CTRL.vhd(20): inferring latch(es) for signal or variable "IMAR", which holds its previous value in one or more paths through the process File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at CTRL.vhd(20): inferring latch(es) for signal or variable "IIR", which holds its previous value in one or more paths through the process File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at CTRL.vhd(20): inferring latch(es) for signal or variable "IA", which holds its previous value in one or more paths through the process File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at CTRL.vhd(20): inferring latch(es) for signal or variable "IDR", which holds its previous value in one or more paths through the process File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at CTRL.vhd(20): inferring latch(es) for signal or variable "ISUM", which holds its previous value in one or more paths through the process File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at CTRL.vhd(20): inferring latch(es) for signal or variable "EA", which holds its previous value in one or more paths through the process File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at CTRL.vhd(20): inferring latch(es) for signal or variable "EDR", which holds its previous value in one or more paths through the process File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Info (10041): Inferred latch for "EDR" at CTRL.vhd(20) File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Info (10041): Inferred latch for "EA" at CTRL.vhd(20) File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Info (10041): Inferred latch for "ISUM" at CTRL.vhd(20) File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Info (10041): Inferred latch for "IDR" at CTRL.vhd(20) File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Info (10041): Inferred latch for "IA" at CTRL.vhd(20) File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Info (10041): Inferred latch for "IIR" at CTRL.vhd(20) File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Info (10041): Inferred latch for "IMAR" at CTRL.vhd(20) File: D:/quartus/MyProject/MComputer/CTRL.vhd Line: 20
+Info (12128): Elaborating entity "IR" for hierarchy "IR:inst7"
+Info (12128): Elaborating entity "DR" for hierarchy "DR:inst3"
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:inst10"
+Warning (10492): VHDL Process Statement warning at RAM.vhd(26): signal "DIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at RAM.vhd(26): signal "ADDR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at RAM.vhd(28): signal "ADDR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 28
+Warning (10631): VHDL Process Statement warning at RAM.vhd(21): inferring latch(es) for signal or variable "DOUT", which holds its previous value in one or more paths through the process File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 21
+Info (10041): Inferred latch for "DOUT[0]" at RAM.vhd(21) File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 21
+Info (10041): Inferred latch for "DOUT[1]" at RAM.vhd(21) File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 21
+Info (10041): Inferred latch for "DOUT[2]" at RAM.vhd(21) File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 21
+Info (10041): Inferred latch for "DOUT[3]" at RAM.vhd(21) File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 21
+Info (10041): Inferred latch for "DOUT[4]" at RAM.vhd(21) File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 21
+Info (10041): Inferred latch for "DOUT[5]" at RAM.vhd(21) File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 21
+Info (10041): Inferred latch for "DOUT[6]" at RAM.vhd(21) File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 21
+Info (10041): Inferred latch for "DOUT[7]" at RAM.vhd(21) File: D:/quartus/MyProject/MComputer/RAM.vhd Line: 21
+Info (12128): Elaborating entity "RAM_MUX" for hierarchy "RAM_MUX:inst"
+Info (12128): Elaborating entity "MAR" for hierarchy "MAR:inst8"
+Info (12128): Elaborating entity "PC" for hierarchy "PC:inst9"
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst5"
+Info (10041): Inferred latch for "ALU_OUT[0]" at ALU.vhd(22) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 22
+Info (10041): Inferred latch for "ALU_OUT[1]" at ALU.vhd(22) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 22
+Info (10041): Inferred latch for "ALU_OUT[2]" at ALU.vhd(22) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 22
+Info (10041): Inferred latch for "ALU_OUT[3]" at ALU.vhd(22) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 22
+Info (10041): Inferred latch for "ALU_OUT[4]" at ALU.vhd(22) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 22
+Info (10041): Inferred latch for "ALU_OUT[5]" at ALU.vhd(22) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 22
+Info (10041): Inferred latch for "ALU_OUT[6]" at ALU.vhd(22) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 22
+Info (10041): Inferred latch for "ALU_OUT[7]" at ALU.vhd(22) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 22
+Info (10041): Inferred latch for "ALU_TEMP[0]" at ALU.vhd(21) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 21
+Info (10041): Inferred latch for "ALU_TEMP[1]" at ALU.vhd(21) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 21
+Info (10041): Inferred latch for "ALU_TEMP[2]" at ALU.vhd(21) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 21
+Info (10041): Inferred latch for "ALU_TEMP[3]" at ALU.vhd(21) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 21
+Info (10041): Inferred latch for "ALU_TEMP[4]" at ALU.vhd(21) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 21
+Info (10041): Inferred latch for "ALU_TEMP[5]" at ALU.vhd(21) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 21
+Info (10041): Inferred latch for "ALU_TEMP[6]" at ALU.vhd(21) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 21
+Info (10041): Inferred latch for "ALU_TEMP[7]" at ALU.vhd(21) File: D:/quartus/MyProject/MComputer/ALU.vhd Line: 21
+Info (12128): Elaborating entity "ACC" for hierarchy "ACC:inst4"
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Sun Jul 15 21:12:02 2018
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:45
+
+

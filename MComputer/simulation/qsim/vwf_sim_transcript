@@ -1,0 +1,170 @@
+Determining the location of the ModelSim executable...
+
+Using: D:\quartus\Quartus2\modelsim_ase\win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Mytest -c Mytest --vector_source="D:/quartus/Quartus2/MComputer.vwf" --testbench_file="D:/quartus/Quartus2/simulation/qsim/MComputer.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu Jul 12 18:48:37 2018
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Mytest -c Mytest --vector_source=D:/quartus/Quartus2/MComputer.vwf --testbench_file=D:/quartus/Quartus2/simulation/qsim/MComputer.vwf.vht
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+Completed successfully. 
+
+**** Generating the timing simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="D:/quartus/Quartus2/simulation/qsim/" Mytest -c Mytest
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu Jul 12 18:48:39 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=D:/quartus/Quartus2/simulation/qsim/ Mytest -c Mytest
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file Mytest_8_1200mv_85c_slow.vho in folder "D:/quartus/Quartus2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Mytest_8_1200mv_0c_slow.vho in folder "D:/quartus/Quartus2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Mytest_min_1200mv_0c_fast.vho in folder "D:/quartus/Quartus2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Mytest.vho in folder "D:/quartus/Quartus2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Mytest_8_1200mv_85c_vhd_slow.sdo in folder "D:/quartus/Quartus2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Mytest_8_1200mv_0c_vhd_slow.sdo in folder "D:/quartus/Quartus2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Mytest_min_1200mv_0c_vhd_fast.sdo in folder "D:/quartus/Quartus2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Mytest_vhd.sdo in folder "D:/quartus/Quartus2/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4660 megabytes
+    Info: Processing ended: Thu Jul 12 18:48:41 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+D:/quartus/Quartus2/simulation/qsim/Mytest.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+D:/quartus/Quartus2/modelsim_ase/win32aloem/vsim -c -do Mytest.do
+
+Reading D:/quartus/Quartus2/modelsim_ase/tcl/vsim/pref.tcl 
+
+
+# 10.1d
+
+
+# do Mytest.do 
+
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+
+# -- Compiling architecture structure of hard_block
+
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity MC_TEMP
+
+# -- Compiling architecture structure of MC_TEMP
+
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MC_TEMP_vhd_vec_tst
+
+# -- Compiling architecture MC_TEMP_arch of MC_TEMP_vhd_vec_tst
+
+# vsim -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim -c -sdfmax MC_TEMP_vhd_vec_tst/i1=Mytest_vhd.sdo -t 1ps -novopt work.MC_TEMP_vhd_vec_tst 
+
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mc_temp_vhd_vec_tst(mc_temp_arch)
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.mc_temp(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# Loading instances from Mytest_vhd.sdo
+# Loading timing data from Mytest_vhd.sdo
+# ** Warning: Design size of 6 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mc_temp_vhd_vec_tst File: MComputer.vwf.vht
+# after#29
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading D:/quartus/Quartus2/MComputer.vwf...
+
+Reading D:/quartus/Quartus2/simulation/qsim/Mytest.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to D:/quartus/Quartus2/simulation/qsim/Mytest_20180712184847.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.
